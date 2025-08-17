@@ -32,11 +32,11 @@ const MailboxForm = (props) => {
 
             <label htmlFor="boxSize">Size:</label>
             <select name="boxSize" id="boxSize" value={formData.boxSize} onChange={handleChange}>
-                <option value="small">Small</option>
-                <option value="medium">Medium</option>
-                <option value="large">Large</option> </select>
-        </form>
+                <option value="SMALL">SMALL</option>
+                <option value="MEDIUM">MEDIUM</option>
+                <option value="LARGE">LARGE</option> </select>
         <button type="submit">Submit</button>
+        </form>
     </main>
     )
 }
