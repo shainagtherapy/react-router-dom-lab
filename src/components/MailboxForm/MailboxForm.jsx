@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router';
 
 const initialState = {
     _id: 0,
-    boxSize: '',
+    boxSize: 'SMALL',
     boxOwner: '',
 }
 
@@ -22,6 +22,9 @@ const MailboxForm = (props) => {
     const handleChange = ({ target }) => {
         setFormData({...formData, [target.name]: target.value});
     }
+    useEffect(() => {
+        console.log(formData)
+    }, [formData])
 
     return (
     <main>
