@@ -26,7 +26,7 @@ const App = () => {
       <Route path="/mailboxes" element={ <MailboxList mailboxes={mailboxes} /> } />
       <Route path="/new-mailbox" element={ <MailboxForm addMailbox={addMailbox} /> } />
       <Route path="/mailboxes/:mailboxId" element={ <MailboxDetails mailboxes={mailboxes} /> } />
-      <Route path="*" element={ <h2>Whoops, nothing here!</h2> } />
+      <Route path="*" element={ <h2>Mailbox Not Found!</h2> } />
     </Routes>
 
     </>
